@@ -1,0 +1,31 @@
+### register new User
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "full_name": "Kenedy Maina",
+    "email": "kenedy.maina@thejitu.com",
+    "cohort_no": 22,
+    "password": "test12"
+}
+
+### Get all users
+GET http://localhost:3000/auth/user
+
+### Get one user
+GET  http://localhost:3000/auth/user/022f6062-41ae-4477-9e12-98f38abf9d86
+
+### Delete a user
+DELETE http://localhost:3000/auth/delete/022f6062-41ae-4477-9e12-98f38abf9d86
+
+### Update user
+
+PUT http://localhost:3000/auth/update/170da7a7-2af0-432b-b655-724229a190f4
+Content-Type: application/json
+
+{
+    "full_name": "John Doe",
+    "email": "kenedymaina@thejitu.com",
+    "cohort_no": 90,
+    "password": "test12"
+}
